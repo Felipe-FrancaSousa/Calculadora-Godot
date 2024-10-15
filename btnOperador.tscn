@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://dj0bb6kncymfg"]
+
+[ext_resource type="Script" path="res://operadores.gd" id="1_av50l"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dst5n"]
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+
+[node name="Operador" type="Control"]
+layout_mode = 3
+anchor_right = 0.0694444
+anchor_bottom = 0.0864198
+offset_right = -1.52588e-05
+offset_bottom = -3.05176e-05
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_av50l")
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.00625
+anchor_right = 1.0
+anchor_bottom = 1.00625
+grow_horizontal = 2
+grow_vertical = 2
+text = "C"
+label_settings = SubResource("LabelSettings_dst5n")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

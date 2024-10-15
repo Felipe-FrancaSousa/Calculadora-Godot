@@ -1,0 +1,212 @@
+[gd_scene load_steps=6 format=3 uid="uid://dyhebkyg1hufd"]
+
+[ext_resource type="PackedScene" uid="uid://naol76io8sok" path="res://botao.tscn" id="1_g80ma"]
+[ext_resource type="Script" path="res://base.gd" id="1_mmwk7"]
+[ext_resource type="PackedScene" uid="uid://dj0bb6kncymfg" path="res://btnOperador.tscn" id="3_s3cwj"]
+
+[sub_resource type="FontFile" id="FontFile_26526"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+cache/0/80/0/ascent = 0.0
+cache/0/80/0/descent = 0.0
+cache/0/80/0/underline_position = 0.0
+cache/0/80/0/underline_thickness = 0.0
+cache/0/80/0/scale = 1.0
+cache/0/70/0/ascent = 0.0
+cache/0/70/0/descent = 0.0
+cache/0/70/0/underline_position = 0.0
+cache/0/70/0/underline_thickness = 0.0
+cache/0/70/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_n2rhj"]
+line_spacing = 50.0
+font = SubResource("FontFile_26526")
+font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[node name="Base" type="Node"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.222222
+anchor_top = 0.0123457
+anchor_right = 0.777778
+anchor_bottom = 0.987654
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_mmwk7")
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.305882, 0.321569, 0.439216, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 56.0
+offset_right = 576.0
+offset_bottom = 184.0
+color = Color(0, 0.243591, 0.243591, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.025
+anchor_top = 0.0126582
+anchor_right = 0.775
+anchor_bottom = 0.189873
+offset_left = 64.0
+offset_top = 56.0
+offset_right = 64.0
+offset_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.839216)
+metadata/_edit_use_anchors_ = true
+
+[node name="Tela" type="Label" parent="Control/ColorRect2"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = -56.0
+offset_right = -8.0
+offset_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "00000000000"
+label_settings = SubResource("LabelSettings_n2rhj")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 320.0
+offset_top = 224.0
+offset_right = 832.0
+offset_bottom = 616.0
+color = Color(0.266575, 0.266575, 0.266575, 1)
+
+[node name="Números" type="Node" parent="."]
+
+[node name="1" parent="Números" instance=ExtResource("1_g80ma")]
+offset_left = 360.0
+offset_top = 240.0
+offset_right = 360.0
+offset_bottom = 240.0
+
+[node name="2" parent="Números" instance=ExtResource("1_g80ma")]
+offset_left = 464.0
+offset_top = 240.0
+offset_right = 464.0
+offset_bottom = 240.0
+
+[node name="3" parent="Números" instance=ExtResource("1_g80ma")]
+offset_left = 568.0
+offset_top = 240.0
+offset_right = 568.0
+offset_bottom = 240.0
+
+[node name="4" parent="Números" instance=ExtResource("1_g80ma")]
+offset_left = 360.0
+offset_top = 336.0
+offset_right = 360.0
+offset_bottom = 336.0
+
+[node name="5" parent="Números" instance=ExtResource("1_g80ma")]
+offset_left = 464.0
+offset_top = 336.0
+offset_right = 464.0
+offset_bottom = 336.0
+
+[node name="6" parent="Números" instance=ExtResource("1_g80ma")]
+offset_left = 568.0
+offset_top = 336.0
+offset_right = 568.0
+offset_bottom = 336.0
+
+[node name="7" parent="Números" instance=ExtResource("1_g80ma")]
+offset_left = 360.0
+offset_top = 432.0
+offset_right = 360.0
+offset_bottom = 432.0
+
+[node name="8" parent="Números" instance=ExtResource("1_g80ma")]
+offset_left = 464.0
+offset_top = 432.0
+offset_right = 464.0
+offset_bottom = 432.0
+
+[node name="9" parent="Números" instance=ExtResource("1_g80ma")]
+offset_left = 568.0
+offset_top = 432.0
+offset_right = 568.0
+offset_bottom = 432.0
+
+[node name="0" parent="Números" instance=ExtResource("1_g80ma")]
+offset_left = 464.0
+offset_top = 520.0
+offset_right = 464.0
+offset_bottom = 520.0
+
+[node name="Operações" type="Node" parent="."]
+
+[node name="C" parent="Operações" instance=ExtResource("3_s3cwj")]
+offset_left = 360.0
+offset_top = 536.0
+offset_right = 360.0
+offset_bottom = 536.0
+valor = "C"
+
+[node name="+" parent="Operações" instance=ExtResource("3_s3cwj")]
+offset_left = 696.0
+offset_top = 240.0
+offset_right = 696.0
+offset_bottom = 240.0
+valor = "+"
+
+[node name="-" parent="Operações" instance=ExtResource("3_s3cwj")]
+offset_left = 696.0
+offset_top = 312.0
+offset_right = 696.0
+offset_bottom = 312.0
+valor = "-"
+
+[node name="x" parent="Operações" instance=ExtResource("3_s3cwj")]
+offset_left = 696.0
+offset_top = 384.0
+offset_right = 696.0
+offset_bottom = 384.0
+valor = "*"
+
+[node name="÷" parent="Operações" instance=ExtResource("3_s3cwj")]
+offset_left = 696.0
+offset_top = 456.0
+offset_right = 696.0
+offset_bottom = 456.0
+valor = "/"
+
+[node name="=" parent="Operações" instance=ExtResource("3_s3cwj")]
+anchor_right = 0.0972222
+offset_left = 680.0
+offset_top = 536.0
+offset_right = 680.0
+offset_bottom = 536.0
+valor = "="
