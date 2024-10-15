@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="Calculadora"
-run/main_scene="res://base.tscn"
+run/main_scene="res://Cenas/base.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Global="*res://global.gd"
+Global="*res://Scripts/global.gd"
 
 [rendering]
 
