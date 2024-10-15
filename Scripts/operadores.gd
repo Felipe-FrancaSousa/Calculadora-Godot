@@ -13,19 +13,37 @@ func _process(_delta: float) -> void:
 
 
 func _on_button_pressed() -> void:
-	match label.text:
-		"+":
-			Global.exibir += valor
-		"-":
-			Global.exibir += valor
-		"x":
-			Global.exibir += valor
-		"÷":
-			Global.exibir += valor
-		"C":
-			Global.exibir = ""
-		"=":
-			expression.parse(Global.exibir)
-			var result = expression.execute()
-			Global.exibir += valor + str(result)
-			var resultado = true
+	if label.text == "C":
+		Global.exibir = ""
+
+	if !Global.controle:
+		match label.text:
+			"+":
+				Global.exibir += valor
+				Global.controle = true
+			"-":
+				Global.exibir += valor
+				Global.controle = true
+			"x":
+				Global.exibir += valor
+				Global.controle = true
+			"÷":
+				Global.exibir += valor
+				Global.controle = true
+			",":
+				Global.exibir += valor
+				Global.controle = true
+			"=":
+				if !Global.controle or Global.exibir == "":
+					expression.parse(Global.exibir)
+					var result = expression.execute()
+					if result != null:
+						Global.exibir += valor + str(result)
+						Global.resultado = true
+						Global.controle = true
+					else:
+						Global.exibir += valor + "Erro!"
+						Global.resultado = true
+						Global.controle = true
+	else:
+		print("Erro!")

@@ -24,8 +24,8 @@ font_color = Color(0, 0, 0, 1)
 
 [node name="Botao" type="Control"]
 layout_mode = 3
-anchor_right = 0.0694444
-anchor_bottom = 0.123457
+anchor_right = 0.109375
+anchor_bottom = 0.123418
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4

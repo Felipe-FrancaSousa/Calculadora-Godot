@@ -8,8 +8,8 @@ font_color = Color(0, 0, 0, 1)
 
 [node name="Operador" type="Control"]
 layout_mode = 3
-anchor_right = 0.0694444
-anchor_bottom = 0.0864198
+anchor_right = 0.0953125
+anchor_bottom = 0.0870254
 offset_right = -1.52588e-05
 offset_bottom = -3.05176e-05
 grow_horizontal = 2

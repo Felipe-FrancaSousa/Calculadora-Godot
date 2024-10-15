@@ -13,11 +13,18 @@ config_version=5
 config/name="Calculadora"
 run/main_scene="res://Cenas/base.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://calculadoraIcon.png"
+config/windows_native_icon="res://calculadoraIcon.ico"
 
 [autoload]
 
 Global="*res://Scripts/global.gd"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=632
+window/icon="res://icon.svg"
 
 [rendering]
 
